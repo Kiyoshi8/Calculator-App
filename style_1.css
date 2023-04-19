@@ -1,0 +1,116 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background:linear-gradient(#460c4e, #181718, #3b193b, #5d1f97);
+    display: flex;
+    font-family: "Courier New Bold";
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.wrapper{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #ffffff;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background-image: url('Usign-Gradients-Featured-Image.jpg');
+    border: 0px solid rgba(107, 30, 122, 0.34);
+    flex-basis: 400px;
+    height: 590px;
+    padding: 20px 35px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.screen{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 350px;
+}
+
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(65, 65, 65, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #ffffff;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 75px;
+
+    /*transition-property: transform;*/
+    transition-duration: 0.2s;
+    /*transition-timing-function: ease;
+    transition-delay: 0s;*/
+}
+
+.calc-button:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(236, 236, 236, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(133, 131, 131, 0.1);
+    color: #fff;
+    background: #171718;
+}
+
+.calc-button:last-child:hover{
+    background-color: inherit;
+    color: inherit;
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+    box-shadow: 0 0 5px #c403f4, 0 0 10px #6b03f4, 0 0 20px #cc03f4, 0 0 30px #f403c0;
+}
+
+.calc-button:hover{
+    background-color: inherit;
+    transform: translateY(-10px);
+    color: var(--clr-light);
+    box-shadow: 0 0 5px #03e9f4, 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 30px #03e9f4;
+}
+
+.calc-button:active{
+    background-color: #ce78ff;
+}
+
+.double{
+    flex-basis: 47%;
+}
+
+.triple{
+    flex-basis: 73%;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_1.css">
+    <title>Calculator | KiyoshiApp</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <section class="screen">
+            0
+        </section>
+        
+        <section class="calc-buttons">
+            <div class="calc-button-row">
+                <button class="calc-button double"onclick="audio.play();">
+                    C
+                    <script>
+                        const audio = new Audio();
+                        audio.src = "./16secplay.mp3";
+                    </script>                    
+                </button>
+                <button class="calc-button"onclick="audio.play();">
+                    &larr;               
+                </button>
+                <button class="calc-button"onclick="audio.play();">
+                    &divide;                   
+                </button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button"onclick="audio.play();">
+                    7                   
+                </button>
+                <button class="calc-button"onclick="audio.play();">
+                    8  
+                </button>
+                <button class="calc-button"onclick="audio.play();">
+                    9 
+                </button>
+                <button class="calc-button"onclick="audio.play();">
+                    &times;
+                </button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button"onclick="audio.play();">
+                    4  
+                </button>
+                <button class="calc-button"onclick="audio.play();">
+                    5 
+                </button>
+                <button class="calc-button"onclick="audio.play();">
+                    6
+                </button>
+                <button class="calc-button"onclick="audio.play();">
+                    &minus;
+                </button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button"onclick="audio.play();">
+                    1
+                </button>
+                <button class="calc-button"onclick="audio.play();">
+                    2 
+                </button>
+                <button class="calc-button"onclick="audio.play();">
+                    3  
+                </button>
+                <button class="calc-button"onclick="audio.play();">
+                    &plus;
+                </button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button triple"onclick="audio.play();">
+                    0
+                </button>
+                <button class="calc-button"onclick="audio.play();">
+                    &equals;  
+                </button>
+            </div>
+
+        </section>
+        
+    </div>
+
+
+
+    <script src="script.js">
+    </script>
+    
+</body>
+</html>
